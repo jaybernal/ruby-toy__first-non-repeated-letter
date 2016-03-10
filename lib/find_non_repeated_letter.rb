@@ -8,7 +8,22 @@
 #   nil (since there does not exist a non-repeated letter)
 
 
-def find_first_non_repeated_letter(str)
-  #write your method here
-  return true
-end
+def find_first_non_repeated_letter(str) 
+   counter = 0
+   length = str.length 
+   
+   while counter < length
+     
+     if str.length == 1
+      return str[counter]
+     
+     elsif str[counter] != str[counter + 1] && str[counter] != str[counter - 1]
+       return str[counter]
+     
+     else 
+        counter += 1
+     end
+   end
+ end
+ 
+ find_first_non_repeated_letter('aabbcde') 
