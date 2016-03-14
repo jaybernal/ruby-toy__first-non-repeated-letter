@@ -18,3 +18,4 @@ character in a string, and then returns that character. Here are some examples:
 + Given `"abcde"` (where no characters are repeated), your method should return `"a"` (since
   it's first)
 + Given `"aabbcc"` (where there are no non-repeated characters), your method should return `nil`
+test
